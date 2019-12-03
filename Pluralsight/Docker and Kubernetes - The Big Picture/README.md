@@ -98,6 +98,30 @@ Containers can do stateful aplications, but these kinds of workloads are harder.
 
 ### Enterprise and Production Readiness
 
+Docker
+
+Both Docker the technology, and the company, have been around for a while.
+
+![Docker Community and Enterprise](2019-12-02-19_30_10-Pluralsight.png)
+
+Kubernetes
+
+Came out of Google, is open source like Docker, and is incredibly popular.  Can be manged in the cloud or on premises.
+
+![Kubernetes On Premises Or Cloud](2019-12-02-19_33_27-Pluralsight.png)
+
+It is absolutely huge and incredible in scope with what it can do.  Every feature goes through a well defined list of stages.
+
+![Kubernets Feature Stages](2019-12-02-19_35_15-Pluralsight.png)
+
 ### A Word on Orchestration
 
+Any modern day business application is going to be composed of multiple interlinked services, spanning multiple hosts/datacenters/clouds.  With this in mind, scale makes things very complex.
+
+Orchestration is about defining the applications, how all the parts interact, provisioning the infrastructure, the deploying and managing the applications.
+
+![Kubernetes Game Plan](2019-12-02-19_44_21-Pluralsight.png)
+
 ### What Next
+
+More training!
