@@ -30,7 +30,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 ### Cloud Computing Models
 
-- <details>
+<details>
     <summary>Infrastructure as a Service (IaaS)</summary>
     <br />
 
@@ -41,7 +41,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 </details>
 
-- <details>
+<details>
     <summary>Platform as a Service (IaaS)</summary>
     <br />
 
@@ -54,7 +54,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 </details>
 
-- <details>
+<details>
     <summary>Software as a Service (SaaS)</summary>
     <br />
 
@@ -67,7 +67,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 ### Cloud Computing Deployment Models
 
-- <details>
+<details>
     <summary>Cloud</summary>
     <br />
 
@@ -76,7 +76,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 </details>
 
-- <details>
+<details>
     <summary>Hybrid</summary>
     <br />
 
@@ -86,7 +86,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 </details>
 
-- <details>
+<details>
     <summary>On-Premises</summary>
     <br />
 
@@ -100,7 +100,7 @@ you can use, can help you decide what set of services is right for your needs.
 The AWS Cloud infrastructure is built around AWS Regions and Availability
 Zones.
 
-- <details>
+<details>
     <summary>AWS Region</summary>
     <br />
 
@@ -108,7 +108,7 @@ Zones.
 
 </details>
 
-- <details>
+<details>
     <summary>AWS Availability Zone</summary>
     <br />
 
@@ -131,9 +131,9 @@ Below are examples of controls that are managed by AWS, AWS Customers and/or bot
     <summary>Inherited Controls</summary>
     <br />
 
-Controls which a customer fully inherits from AWS.
+    Controls which a customer fully inherits from AWS.
 
-- Physical and Environmental controls
+  - Physical and Environmental controls
 
 </details>
 
@@ -141,11 +141,11 @@ Controls which a customer fully inherits from AWS.
     <summary>Shared Controls</summary>
     <br />
 
-    Controls which apply to both the infrastructure layer and customer layers.
+Controls which apply to both the infrastructure layer and customer layers.
 
-    - Patch Management
-    - Configuration Management
-    - Awareness & Training
+- Patch Management
+- Configuration Management
+- Awareness & Training
 
 </details>
 
@@ -153,9 +153,9 @@ Controls which a customer fully inherits from AWS.
     <summary>Customer Specific</summary>
     <br />
 
-    Controls which are solely the responsibility of the customer
+Controls which are solely the responsibility of the customer
 
-    - Service and Communications Protection or Zone Security
+- Service and Communications Protection or Zone Security
 
 </details>
 
