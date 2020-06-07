@@ -131,9 +131,9 @@ Below are examples of controls that are managed by AWS, AWS Customers and/or bot
     <summary>Inherited Controls</summary>
     <br />
 
-    Controls which a customer fully inherits from AWS.
+Controls which a customer fully inherits from AWS.
 
-    - Physical and Environmental controls
+- Physical and Environmental controls
 
 </details>
 
