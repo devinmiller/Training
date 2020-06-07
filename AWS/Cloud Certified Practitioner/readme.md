@@ -32,6 +32,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 - <details>
     <summary>Infrastructure as a Service (IaaS)</summary>
+    <br />
 
     Think EC2.
 
@@ -42,6 +43,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 - <details>
     <summary>Platform as a Service (IaaS)</summary>
+    <br />
 
     Think Elastic Beanstalk or Lightsail.  
 
@@ -54,6 +56,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 - <details>
     <summary>Software as a Service (SaaS)</summary>
+    <br />
 
     Think Gmail.  
 
@@ -66,6 +69,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 - <details>
     <summary>Cloud</summary>
+    <br />
 
     A cloud-based application is fully deployed in the cloud and all parts of
     the application run in the cloud.
@@ -74,6 +78,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 - <details>
     <summary>Hybrid</summary>
+    <br />
 
     A hybrid deployment is a way to connect infrastructure and applications
     between cloud-based resources and existing resources that are not located
@@ -83,6 +88,7 @@ you can use, can help you decide what set of services is right for your needs.
 
 - <details>
     <summary>On-Premises</summary>
+    <br />
 
     The deployment of resources on-premises, using virtualization and resource
     management tools, is sometimes called the “private cloud.”
@@ -96,6 +102,7 @@ Zones.
 
 - <details>
     <summary>AWS Region</summary>
+    <br />
 
     A physical location in the world with multiple (at least two) Availability Zones.
 
@@ -103,6 +110,7 @@ Zones.
 
 - <details>
     <summary>AWS Availability Zone</summary>
+    <br />
 
     One or more discrete data centers, each with redundant power, networking,
     and connectivity housed in separate facilities
@@ -119,8 +127,9 @@ The AWS Cloud enables a shared responsibility model.
 
 Below are examples of controls that are managed by AWS, AWS Customers and/or both.
 
-- <details>
+<details>
     <summary>Inherited Controls</summary>
+    <br />
 
     Controls which a customer fully inherits from AWS.
 
@@ -128,8 +137,9 @@ Below are examples of controls that are managed by AWS, AWS Customers and/or bot
 
 </details>
 
-- <details>
+<details>
     <summary>Shared Controls</summary>
+    <br />
 
     Controls which apply to both the infrastructure layer and customer layers.
 
@@ -139,11 +149,127 @@ Below are examples of controls that are managed by AWS, AWS Customers and/or bot
 
 </details>
 
-- <details>
+<details>
     <summary>Customer Specific</summary>
+    <br />
 
     Controls which are solely the responsibility of the customer
 
     - Service and Communications Protection or Zone Security
 
 </details>
+
+#### Security Resources
+
+- [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
+
+### Compliance
+
+AWS Cloud Compliance enables you to understand the robust controls in place
+at AWS to maintain security and data protection in the cloud.
+
+AWS Artifact is the central resource for compliance-related information. It
+provides on-demand access to security and compliance reports and select online
+agreements. Reports available in AWS Artifact include our Service Organization
+Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications
+from accreditation bodies across geographies and compliance verticals that
+validate the implementation and operating effectiveness of AWS security
+controls.
+
+## Amazon Web Services Cloud Platform
+
+There are three ways to access AWS services -
+
+1. Management Console
+1. Command Line Interface (CLI)
+1. Software Development Kits (SDKs)
+
+### Analytics
+
+<details>
+    <summary>Athena</summary>
+    <br />
+
+    Run SQL queries against data stored in S3 without the need for complex 
+    extract, transform, and load (ETL) jobs to prepare the data for analysis.
+
+</details>
+
+<details>
+    <summary>Elastic Map Reduce (EMR)</summary>
+    <br />
+
+    A big data platform for processing vast amounts of data in the cloud using 
+    popular open source tools.
+
+</details>
+
+<details>
+    <summary>CloudSearch</summary>
+    <br />
+
+    A fully managed service for adding simple and cost effective search 
+    solutions to websites or applications.
+
+</details>
+
+<details>
+    <summary>Elasticsearch Service</summary>
+    <br />
+
+    A service to deploy, operate and manage Elasticsearch to provide search, 
+    analyses, and visualization of data in real-time.
+
+</details>
+
+<details>
+    <summary>Kinesis</summary>
+    <br />
+
+    A service for collecting, processing, and analyzing real-time, streaming data.
+
+</details>
+
+<details>
+    <summary>Redshift</summary>
+    <br />
+
+    A fast, scalable data warehouse for analyzing data.
+
+</details>
+
+<details>
+    <summary>QuickSight</summary>
+    <br />
+
+    A business intelligence (BI) service.
+
+</details>
+
+<details>
+    <summary>Data Pipeline</summary>
+    <br />
+
+    A web service for moving data between different cloud sources and 
+    on-premise sources at specified intervals.
+
+</details>
+
+<details>
+    <summary>Glue</summary>
+    <br />
+
+    A fully managed extract, load, and transform (ETL) service to prepare and 
+    load data for analytics.
+
+</details>
+
+<details>
+    <summary>Lake Formation</summary>
+    <br />
+
+    A service to help with setting up a secure data lake.
+
+</details>
+
+
