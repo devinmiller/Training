@@ -9,6 +9,13 @@ There are four levels of support available for AWS:
 
 ![AWS Support Plans Overview](images/Support_Plans.png)
 
+## Trusted Advisor
+
+AWS Trusted Advisor is an online tool that provides you real time guidance to
+help you provision your resources following AWS best practices.
+
+![Trusted Advisor Overview](images/Trusted_Advisor.png)
+
 ## Basic
 
 Basic support is included for all customer and includes:
