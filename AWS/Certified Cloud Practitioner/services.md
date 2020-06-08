@@ -9,7 +9,7 @@ on-demand, available in seconds, with pay-as-you-go pricing
 
 Cloud computing provides a simple way to access servers, storage, databases
 and a broad set of application services over the Internet. A cloud services
-platform, such as Amazon Web Services, owns and maintains the network 
+platform, such as Amazon Web Services, owns and maintains the network
 connected hardware required for these application services, while you provision
 and use what you need via a web application.
 
@@ -190,7 +190,7 @@ There are three ways to access AWS services -
 
 <summary>Athena</summary>
 
-> Run SQL queries against data stored in S3 without the need for complex 
+> Run SQL queries against data stored in S3 without the need for complex
 > extract, transform, and load (ETL) jobs to prepare the data for analysis.
 
 </details>
@@ -199,7 +199,7 @@ There are three ways to access AWS services -
 
 <summary>Elastic Map Reduce (EMR)</summary>
 
-> A big data platform for processing vast amounts of data in the cloud using 
+> A big data platform for processing vast amounts of data in the cloud using
 > popular open source tools.
 
 </details>
@@ -208,7 +208,7 @@ There are three ways to access AWS services -
 
 <summary>CloudSearch</summary>
 
-> A fully managed service for adding simple and cost effective search 
+> A fully managed service for adding simple and cost effective search
 > solutions to websites or applications.
 
 </details>
@@ -217,7 +217,7 @@ There are three ways to access AWS services -
 
 <summary>Elasticsearch Service</summary>
 
-> A service to deploy, operate and manage Elasticsearch to provide search, 
+> A service to deploy, operate and manage Elasticsearch to provide search,
 > analyses, and visualization of data in real-time.
 
 </details>
@@ -250,7 +250,7 @@ There are three ways to access AWS services -
 
 <summary>Data Pipeline</summary>
 
-> A web service for moving data between different cloud sources and 
+> A web service for moving data between different cloud sources and
 > on-premise sources at specified intervals.
 
 </details>
@@ -259,7 +259,7 @@ There are three ways to access AWS services -
 
 <summary>Glue</summary>
 
-> A fully managed extract, load, and transform (ETL) service to prepare and 
+> A fully managed extract, load, and transform (ETL) service to prepare and
 > load data for analytics.
 
 </details>
@@ -307,7 +307,7 @@ There are three ways to access AWS services -
 
 <summary>Simple Workflow (SWF)</summary>
 
-> A service to help build, run, and scale background jobs that have sequential 
+> A service to help build, run, and scale background jobs that have sequential
 > or parallel steps.
 
 </details>
@@ -329,8 +329,8 @@ There are three ways to access AWS services -
 > Used for the following:
 >
 > - Set custom budgets that alert when costs or usage exceed budgeted amount.
-> - Set Reserved Instance (RI) utilization targets that alert when utilization 
-> drops below defined threshold.
+> - Set Reserved Instance (RI) utilization targets that alert when
+> utilization drops below defined threshold.
 
 </details>
 
@@ -853,6 +853,15 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 </details>
 
+<details>
+
+<summary>PinPoint</summary>
+
+> A service to send targeted messages to customers through multiple engagement
+> channels, such as email, sms, and push notifications.
+
+</details>
+
 ### Networking and Content Delivery
 
 <details>
@@ -941,5 +950,186 @@ A service that provides secure, resizable computer capacity in the cloud.
 >     is required
 > - Classic Load Balancer
 >   - Intended for applications that were built within the EC2-Classic network
+
+<details>
+
+<summary>ELB Features</summary>
+
+![ELB Feature Set Image 1](images/ELB_Feature_1.png)
+
+![ELB Feature Set Image 2](images/ELB_Feature_2.png)
+
+![ELB Feature Set Image 3](images/ELB_Feature_3.png)
+
+</details>
+
+</details>
+
+### Security, Identity, and Compliance
+
+<details>
+
+<summary>Security Hub</summary>
+
+> Provides a comprehensive view of high-priority security alerts and compliance
+> status for multiple security services across AWS accounts.
+
+</details>
+
+<details>
+
+<summary>Identity and Access Management (IAM)</summary>
+
+> A service for managing users, groups, and permissions to securely control
+> access to AWS services and resources.
+>
+> IAM allows for the following:
+>
+> - Manage IAM Users and Access
+>   - Create users, assign security credentials, or request temporary
+>     credentials.
+>   - Manage permissions to control which operations a user can perform.
+> - Manage IAM Roles and Permissions
+>   - Create roles and manage permissions about which operations can be
+>     performed to the entity, or service, assuming the role.
+>   - Define which entities or services are allowed to assume the role.
+> - Manage Federated Users and Permissions
+>   - Enable identity federation to allow existing identities (users,
+       groups, and roles) in the enterprise access without the need to
+       create an IAM user for each identity.
+
+</details>
+
+<details>
+
+<summary>GuardDuty</summary>
+
+> A threat detection service that continuously monitors for malicious or
+> unauthorized behavior.
+
+</details>
+
+<details>
+
+<summary>Inspector</summary>
+
+> An automated security assessment service for EC2 instances.
+
+</details>
+
+<details>
+
+<summary>Macie</summary>
+
+> A security service to automatically discover, classify, and protect
+> sensitive data in AWS.
+
+</details>
+
+<details>
+
+<summary>Certificate Manager</summary>
+
+> A service for provisioning, managing, and deploying SSL certificates.
+
+</details>
+
+<details>
+
+<summary>Key Management Service</summary>
+
+> A service to create and manage keys, and control the use of encryption
+> across a wide range of services and applications.
+
+</details>
+
+<details>
+
+<summary>Organizations</summary>
+
+> Enables managing multiple AWS accounts from a single locations.  Allows
+> billing for multiple accounts to be rolled up into a single bill, applying
+> any volume discounts as part of the consolidated billing.
+
+</details>
+
+<details>
+
+<summary>Shield</summary>
+
+> A managed Distributed Denial of Service (DDoS) protection service.
+
+</details>
+
+<details>
+
+<summary>Web Application Firewall (WAF)</summary>
+
+> A firewall that helps protect web applications from common exploits.
+
+</details>
+
+### Storage
+
+<details>
+
+<summary>Simple Storage Service (S3)</summary>
+
+> An object storage service.
+>
+> S3 is available in the following storage classes:
+>
+> - Standard
+>   - Offers high durability, availability, and performance object storage
+>     for frequently accessed data
+> - Intelligent-Tiering
+>   - Designed to optimize costs by automatically moving data to the most
+>     cost-effective access tier
+> - Standard Infrequent Access (Standard-IA)
+>   - For data that is accessed less frequently, but requires rapid access
+>     when needed.
+> - One Zone Infrequent Access (One Zone-IA)
+>   - For data that is accessed less frequently, but requires rapid access
+>     when needed.
+>   - Stores data in a single AZ and costs 20% less than S3 Standard-IA.
+>   - Ideal for customers who want a lower-cost option for infrequently
+>     accessed data but do not require the availability and resilience of S3
+>     Standard or S3 Standard-IA.
+> - Glacier
+>   - A secure, durable, and low-cost storage class for data archiving.
+>   - Provides three retrieval options that range from a few minutes to hours.
+> - Glacier Deep Archive
+>   - Lowest-cost storage class and supports long-term retention and digital
+>     preservation for data that may be accessed once or twice in a year
+>   - Data stored in Deep Archive can be restored within 12 hours.
+>
+> ![S3 Performance](images/S3_Performance.png)
+
+</details>
+
+<details>
+
+<summary>Elastic Block Store (EBS)</summary>
+
+> Persistent block storage volumes for EC2 instance.
+
+</details>
+
+<details>
+
+<summary>Elastic File System (EFS)</summary>
+
+> A simple, scalable, elastic file system for Linux-based workloads.  Built
+> to scale on demand to petabytes without disrupting applications, growing
+> and shrinking automatically as files are added and removed.
+
+</details>
+
+<details>
+
+<summary>Storage Gateway</summary>
+
+> Hybrid storage service that enables on-premises applications to seamlessly
+> use AWS cloud storage.
 
 </details>
