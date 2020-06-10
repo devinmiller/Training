@@ -9,6 +9,30 @@ There are four levels of support available for AWS:
 
 ![AWS Support Plans Overview](images/Support_Plans.png)
 
+## AWS Partner Network
+
+The AWS Partner Network (APN) is the global partner program for technology and
+consulting businesses who leverage Amazon Web Services to build solutions and
+services for customers.
+
+### APN Consulting Partners
+
+APN Consulting Partners are professional services firms that help customers of
+all types and sizes design, architect, build, migrate, and manage their
+workloads and applications on AWS, accelerating their journey to the cloud.
+
+### APN Technology Partners
+
+APN Technology Partners provide hardware, connectivity services, or software
+solutions that are either hosted on, or integrated with, the AWS Cloud.
+
+## AWS Professional Services
+
+AWS Professional Services shares a collection of offerings to help you achieve
+specific outcomes related to enterprise cloud adoption. Each offering delivers
+a set of activities, best practices, and documentation reflecting our
+experience supporting hundreds of customers in their journey to the AWS Cloud.
+
 ## Trusted Advisor
 
 AWS Trusted Advisor is an online tool that provides you real time guidance to

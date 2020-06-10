@@ -318,7 +318,20 @@ There are three ways to access AWS services -
 
 <summary>Cost Explorer</summary>
 
-> Used to visualize, understand, and manage costs and usage over time.
+> Used to visualize, understand, and manage costs and usage over time.  This
+> is accomplished with the following:
+>
+> - Monthly costs by AWS service
+>   - Includes a default report that helps you visualize the costs and usage
+>   associated with your top five cost-accruing AWS services
+>   - Gives you a detailed breakdown on all services in the table view
+> - Hourly and resource level granularity
+>   - Helps you visualize, understand, and manage your AWS costs and usage
+>   over a daily or monthly granularity
+>   - Lets you dive deeper using granular filtering and grouping dimensions
+>   such as Usage Type and Tags
+>   - Can also access your data with further granularity by enabling hourly\
+>   and resource level granularity
 
 </details>
 
@@ -328,9 +341,18 @@ There are three ways to access AWS services -
 
 > Used for the following:
 >
-> - Set custom budgets that alert when costs or usage exceed budgeted amount.
+> - Set custom budgets that alert you when your costs or usage exceed or are
+forecasted to exceed your budgeted amount.
 > - Set Reserved Instance (RI) utilization targets that alert when
-> utilization drops below defined threshold.
+> utilization drops below the defined threshold.
+> - View current estimated charges and charges from predicted usage.
+>
+> Types of budgets:
+>
+> - Cost budgets
+> - Usage budgets
+> - RI utilization budgets
+> - RI coverage budgets
 
 </details>
 
@@ -338,9 +360,16 @@ There are three ways to access AWS services -
 
 <summary>Cost & Usage Report</summary>
 
-> A single location for accessing comprehensive information about cost and
-> usage.  Lists usage for each service category used by an account and its
-> IAM users, as well as any tags activated for cost allocation purposes.
+> - Contains the most comprehensive set of cost and usage data available
+> - Contains line items for each unique combination of AWS products, usage
+> type, and operation
+> - Receive reports that break down costs:
+>   - By the hour or month
+>   - By product or product resource
+>   - By cost allocation tags that you define yourself
+> - Deliver billing report files to S3 buckets in CSV format
+>   - Can be loaded into Athena, Redshift, Quicksight, etc. for analysis
+> - Can track your Reserved Instance utilization, charges, and allocations
 
 </details>
 
