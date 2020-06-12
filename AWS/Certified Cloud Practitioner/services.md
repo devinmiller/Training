@@ -159,6 +159,21 @@ Below are examples of controls that are managed by AWS, AWS Customers and/or bot
 
 </details>
 
+#### Penetration Testing
+
+AWS customers are welcome to carry out security assessments or penetration
+tests against their AWS infrastructure without prior approval for 8 services,
+listed below:
+
+- EC2 Instances, NAT Gateways, and Elastic Load Balancers
+- RDS
+- CloudFront
+- Aurora
+- API Gateways
+- Lambda and Lambda Edge functions
+- Lightsail resources
+- Elastic Beanstalk environments
+
 #### Security Resources
 
 - [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
@@ -226,7 +241,7 @@ There are three ways to access AWS services -
 
 <summary>Kinesis</summary>
 
-> A service for collecting, processing, and analyzing real-time, streaming> data.
+> A service for collecting, processing, and analyzing real-time, streaming data.
 
 </details>
 
@@ -476,7 +491,9 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 <summary>Elastic Beanstalk</summary>
 
-> A service for deploying and scaling web applications and services.  
+> A service for deploying and scaling web applications and services developed
+with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar
+servers such as Apache, Nginx, Passenger, and IIS.  
 
 </details>
 
@@ -668,7 +685,7 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 <summary>Polly</summary>
 
-> A that turns text into speech.
+> A service that turns text into speech.
 
 </details>
 
@@ -867,7 +884,7 @@ A service that provides secure, resizable computer capacity in the cloud.
 <summary>DataSync</summary>
 
 > A data transfer service used to automate moving data between on-premises
-> storage and S# or Elastic File System (EFS),
+> storage and S3 or Elastic File System (EFS),
 
 </details>
 
@@ -895,10 +912,37 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 <details>
 
-<summary>Virtual Private Cloud</summary>
+<summary>Virtual Private Cloud (VPC)</summary>
 
 > A virtual network that serves as an isolated section of the AWS Cloud for
 > launching resources.
+>
+> A VPC spans all of the Availability Zones in a region.
+
+</details>
+
+<details>
+
+<summary>Subnet</summary>
+
+> After creating a VPC, one or more subnets can be added in each Availability
+> Zone.  Subnets are not able to span Availability Zones.
+>
+> Types of Subnets:
+>
+> - Public Subnet
+>   - Traffic is routed to an Internet Gateway
+> - Private Subnet
+>   - Doesn't have a route to the Internet Gateway
+> - VPN-only Subnet
+>   - Traffic is routed to a virtual private gateway
+>
+> Subnet Security:
+>
+> - Security Groups
+>   - Control inbound and outbound traffic for instances
+> - Network Access Control Lists
+>   - Control inbound and outbound traffic for subnets
 
 </details>
 
@@ -1069,6 +1113,15 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 > A service to create and manage keys, and control the use of encryption
 > across a wide range of services and applications.
+
+</details>
+
+<details>
+
+<summary>CloudHSM</summary>
+
+> A cloud-based hardware security module (HSM) that enables you to generate
+> and use your own encryption keys on the AWS Cloud.
 
 </details>
 
