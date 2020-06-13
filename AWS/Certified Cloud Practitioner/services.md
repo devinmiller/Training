@@ -347,6 +347,9 @@ There are three ways to access AWS services -
 >   such as Usage Type and Tags
 >   - Can also access your data with further granularity by enabling hourly\
 >   and resource level granularity
+>
+> Provides Reserved Instance (RI) purchase recommendations based on past usage
+> to indicate potential saving opportunities over On-Demand instances.
 
 </details>
 
@@ -918,13 +921,20 @@ servers such as Apache, Nginx, Passenger, and IIS.
 > launching resources.
 >
 > A VPC spans all of the Availability Zones in a region.
-
-</details>
-
-<details>
-
-<summary>Subnet</summary>
-
+>
+> Option for connecting to a VPC:
+>
+> - AWS Managed VPN
+> - Direct Connect
+> - VPN CloudHub
+> - Software VPN
+>
+> Components of a VPC:
+>
+> <details>
+>
+> <summary>Subnet</summary>
+>
 > After creating a VPC, one or more subnets can be added in each Availability
 > Zone.  Subnets are not able to span Availability Zones.
 >
@@ -943,6 +953,63 @@ servers such as Apache, Nginx, Passenger, and IIS.
 >   - Control inbound and outbound traffic for instances
 > - Network Access Control Lists
 >   - Control inbound and outbound traffic for subnets
+>
+> </details>
+> <details>
+>
+> <summary>Internet Gateway</summary>
+>
+> A service that allows communication between between instances in a VPC and
+> the internet.
+>
+> The Amazon VPC side of a connection to the public Internet.
+> </details>
+>
+> <details>
+>
+> <summary>Virtual Private Gateway</summary>
+>
+> The Amazon VPC side of a VPN connection>
+>
+> </details>
+>
+> <details>
+>
+> <summary>Customer Gateway</summary>
+>
+> The customer side of a VPN connection>
+>
+> </details>
+>
+> <details>
+>
+> <summary>Peering Connection</summary>
+>
+> Enables traffic to be routed via private IP addresses between two peered
+> VPCs.
+>
+> </details>
+>
+> <details>
+>
+> <summary>Network Address Translation (NAT)</summary>
+>
+> Enables instances in a private subnet to connect to the internet or other
+> AWS services, but prevents the instances from being connected to over the
+> internet.
+>
+> NAT Types:
+>
+> - Instance
+>   - Managed by the customer
+>   - Associated with a security group
+> - Gateway
+>   - Managed for the customer by AWS
+>   - Not associated with any security groups
+>   - Highly available
+>
+> ![NAT Instance vs NAT Gateway](images/NAT-Instance-vs-NAT-Gateway.jpg)
+> </details>
 
 </details>
 
@@ -968,7 +1035,7 @@ servers such as Apache, Nginx, Passenger, and IIS.
 <summary>PrivateLink</summary>
 
 > Provides private connectivity between VPCs, AWS services, and on-premises
-> applications.
+> applications, securely on the Amazon network.
 
 </details>
 
@@ -976,7 +1043,7 @@ servers such as Apache, Nginx, Passenger, and IIS.
 
 <summary>Direct Connect</summary>
 
-> Establishes a private, dedicated network connection from on-premises to AWs.
+> Establishes a private, dedicated network connection from on-premises to AWS.
 
 </details>
 
@@ -1194,6 +1261,23 @@ servers such as Apache, Nginx, Passenger, and IIS.
 <summary>Elastic Block Store (EBS)</summary>
 
 > Persistent block storage volumes for EC2 instance.
+>
+> EBS Volume Types:
+>
+> - Solid-state drives (SSD)
+>   - General Purpose SSD (gp2)
+>     - General purpose volume balancing price and performance
+>     - Recommended for most workloads
+>   - Provisioned IOPS SSD (io1)
+>     - High-performance volume for low-latency or high-throughput workloads
+>     - For critical business applications requiring sustained OPS performance
+> - Hard disk drives (HDD)
+>   - Throughput Optimized HDD (st1)
+>     - Low-cost volume for frequently accessed, throughput-intensive workloads
+>     - Streaming workloads requiring consistent, fast throughput at a low price
+>   - Cold HDD (sc1)
+>     - Lowest cost volume for less frequently accessed workloads
+>     - Throughput-oriented storage for large volumes of infrequently accessed data
 
 </details>
 
@@ -1213,5 +1297,11 @@ servers such as Apache, Nginx, Passenger, and IIS.
 
 > Hybrid storage service that enables on-premises applications to seamlessly
 > use AWS cloud storage.
+>
+> Gateway Types:
+>
+> - Tape Gateway
+> - Volume Gateway
+> - File Gateway
 
 </details>

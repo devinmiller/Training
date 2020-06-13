@@ -23,9 +23,7 @@ The AWS Well-Architected Framework is based on five pillars:
   requirements, and to maintain that efficiency as demand changes and
   technologies evolve.
 - **Cost Optimization**
-  - The ability to use computing resources efficiently to meet system
-  requirements, and to maintain that efficiency as demand changes and
-  technologies evolve.
+  - The ability to run systems to deliver business value at the lowest price point.
 
 ## General Design Principles
 
