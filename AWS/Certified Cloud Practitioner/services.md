@@ -443,6 +443,15 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 > Maintains application availability by automatically adding or removing EC2
 > instances according to defined conditions.
+>
+> Types of scaling:
+>
+> - Scheduled
+>   - Scale applications ahead of known load changes
+> - Dynamic
+>   - Scale applications based on a particular metric
+> - Predictive
+>   - Scale applications using machine learning traffic predictions
 
 </details>
 
@@ -755,6 +764,15 @@ servers such as Apache, Nginx, Passenger, and IIS.
 <summary>CloudTrail</summary>
 
 > A service for recording and auditing AWS API calls from an account.
+>
+> CloudTrail configuration:
+>
+> - All Regions
+>   - Default option when creating a trail in the CloudTrail console.
+>   - Records events in all regions and delivers logs to an S3 bucket.
+> - Single Region
+>   - Default option when creating a trail in the CLI or API.
+>   - Only records events in the specified region.
 
 </details>
 
@@ -763,7 +781,10 @@ servers such as Apache, Nginx, Passenger, and IIS.
 <summary>Config</summary>
 
 > A service for assessing, auditing, and evaluating the configurations of
-> resources.
+> AWS resources.
+>
+> Provides a resource inventory, configuration history, and configuration
+> change notifications.
 
 </details>
 
@@ -969,7 +990,7 @@ servers such as Apache, Nginx, Passenger, and IIS.
 >
 > <summary>Virtual Private Gateway</summary>
 >
-> The Amazon VPC side of a VPN connection>
+> The Amazon VPC side of a VPN connection.
 >
 > </details>
 >
@@ -977,7 +998,7 @@ servers such as Apache, Nginx, Passenger, and IIS.
 >
 > <summary>Customer Gateway</summary>
 >
-> The customer side of a VPN connection>
+> The customer side of a VPN connection.
 >
 > </details>
 >
@@ -1026,7 +1047,23 @@ servers such as Apache, Nginx, Passenger, and IIS.
 
 <summary>Route 53</summary>
 
-> A domain name system (DNS) used to connect user requests to infrastructure.
+> A domain name system (DNS). Can be used to connect user requests to
+> infrastructure running inside of AWS, as well as infrastructure outside AWS.
+>
+> Features:
+>
+> - Resolver
+> - Traffic flow
+>   - Route to the best endpoint based on geo-proximity, latency, or health
+> - Latency based routing
+> - Geo DNS
+>   - Route to a particular endpoint based on geographic location
+> - Private DNS for Amazon VPC
+> - DNS Failover
+> - Health Checks and Monitoring
+> - Domain Registration
+> - ELB Integration
+> - Weighted Round Robin
 
 </details>
 
@@ -1052,7 +1089,7 @@ servers such as Apache, Nginx, Passenger, and IIS.
 <summary>Global Accelerator</summary>
 
 > A networking service that improves the availability and performance of the
-> applications that offered to global users.
+> applications offered to global users.
 
 </details>
 
@@ -1085,9 +1122,20 @@ servers such as Apache, Nginx, Passenger, and IIS.
 >
 > - Application Load Balancer
 >   - Best suited for load balancing of HTTP and HTTPS traffic
+>   - Key Features:
+>     - Layer 7 Load Balancing
+>     - IP addressed as Targets
+>     - Lambda functions as Targets
+>     - Content-based Routing
+>     - WebSockets Support
 > - Network Load Balancer
 >   - Best suited for load balancing of TCP traffic where extreme performance
 >     is required
+>   - Key Features:
+>     - Connection-based Load Balancing
+>     - High Availability and Throughput
+>     - Low Latency
+>     - Static and Elastic IP support
 > - Classic Load Balancer
 >   - Intended for applications that were built within the EC2-Classic network
 
@@ -1270,7 +1318,7 @@ servers such as Apache, Nginx, Passenger, and IIS.
 >     - Recommended for most workloads
 >   - Provisioned IOPS SSD (io1)
 >     - High-performance volume for low-latency or high-throughput workloads
->     - For critical business applications requiring sustained OPS performance
+>     - For critical business applications requiring sustained IOPS performance
 > - Hard disk drives (HDD)
 >   - Throughput Optimized HDD (st1)
 >     - Low-cost volume for frequently accessed, throughput-intensive workloads
