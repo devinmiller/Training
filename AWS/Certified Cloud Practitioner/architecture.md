@@ -65,19 +65,12 @@ to continually improve supporting processes and procedures.
 
 There are six design principles for operational excellence in the cloud:
 
-- **Perform operations as code**
-  - Perform operations as code to limit human error and enable
-  consistent responses to events.
-- **Annotate documentation**
-  - Automate the creation of annotated documentation after every build.
-- **Make frequent, small, reversible changes**
-  - Make changes in small increments that can be reversed if they fail.
-- **Refine operations procedure frequently**
-  - As you evolve your workload, evolve your procedure appropriately.
-- **Anticipate failure**
-  - Identify potential sources of failure so that they can be removed or mitigated.
-- **Learn from all operational failures**
-  - Drive improvement through lessons learned from all events and failure.
+- Perform operations as code
+- Annotate documentation
+- Make frequent, small, reversible changes
+- Refine operations procedure frequently
+- Anticipate failure
+- Learn from all operational failures
 
 #### Best Practices
 
