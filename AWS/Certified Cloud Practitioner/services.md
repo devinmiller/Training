@@ -504,8 +504,11 @@ A service that provides secure, resizable computer capacity in the cloud.
 <summary>Elastic Beanstalk</summary>
 
 > A service for deploying and scaling web applications and services developed
-with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar
-servers such as Apache, Nginx, Passenger, and IIS.  
+> with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar
+> servers such as Apache, Nginx, Passenger, and IIS.  
+>
+> Leverages the automation capabilities of CloudFormation to build out
+> application architectures.
 
 </details>
 
@@ -542,7 +545,8 @@ servers such as Apache, Nginx, Passenger, and IIS.
 
 <summary>Aurora</summary>
 
-> A fast, scalable MySQL and PostgreSQL compatible relational database engine.
+> A fast, scalable MySQL and PostgreSQL compatible relational database engine
+> that features a distributed, fault-tolerant, self-healing storage system.
 
 </details>
 
@@ -559,7 +563,12 @@ servers such as Apache, Nginx, Passenger, and IIS.
 
 <summary>DynamoDB</summary>
 
-> A NoSQL document database.
+> A NoSQL database that supports key-value and document data models.
+>
+> DynamoDB Features:
+>
+> - Provides consistent, single-digit millisecond latency at any scale
+> - Automatically scales tables to adjust for capacity and maintain performance
 
 </details>
 
@@ -811,6 +820,8 @@ servers such as Apache, Nginx, Passenger, and IIS.
 
 > An online resource to help reduce cost, increase performance, and
 > improve security by optimizing the AWS environment.
+>
+> ![Trusted Advisor Overview](images/Trusted_Advisor.png)
 
 </details>
 
