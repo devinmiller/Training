@@ -514,6 +514,16 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 <details>
 
+<summary>Quick Starts</summary>
+
+> Quick Starts are built by AWS solutions architects and partners to help you
+> deploy popular technologies on AWS, based on AWS best practices for security
+> and high availability.
+
+</details>
+
+<details>
+
 <summary>Lambda</summary>
 
 > Serverless functions.
@@ -556,6 +566,12 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 > A service for setting up, operating, and scaling relational database
 > services in the cloud.
+>
+> By default, RDS created and saves automated backups of DB instances securely
+> in S3 for a specified retention period.
+>
+> With Point-in-time restores, a DB instance can be restored to any specific
+> time during the backup retention period, creating a new DB instance.
 
 </details>
 
@@ -1201,6 +1217,16 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 <details>
 
+<summary>IAM Policy Simulator</summary>
+
+> Used to test and troubleshoot identity-based policies, IAM permissions
+> boundaries, Organizations service control policies, and resource-based
+> policies
+
+</details>
+
+<details>
+
 <summary>GuardDuty</summary>
 
 > A threat detection service that continuously monitors for malicious or
@@ -1312,6 +1338,23 @@ A service that provides secure, resizable computer capacity in the cloud.
 >   - Data stored in Deep Archive can be restored within 12 hours.
 >
 > ![S3 Performance](images/S3_Performance.png)
+>
+> Replication enables automatic, asynchronous copying of objects across Amazon
+> S3 buckets.
+>
+> Types of object replication:
+>
+> - Cross-Region Replication (CRR)
+>   - Used to copy objects across Amazon S3 buckets in different AWS Regions
+> - Same-Region Replication (SRR)
+>   - Used to copy objects across Amazon S3 buckets in the same AWS Region
+>
+> Reasons to use replication:
+>
+> - Replicate objects while retaining metadata
+> - Replicate objects into different storage classes
+> - Maintain object copies under different ownership
+> - Replicate objects within 15 minutes
 
 </details>
 
@@ -1319,7 +1362,8 @@ A service that provides secure, resizable computer capacity in the cloud.
 
 <summary>Elastic Block Store (EBS)</summary>
 
-> Persistent block storage volumes for EC2 instance.
+> Persistent block storage volumes for EC2 instance.  Both root and non-root
+> EBS volumes of an EC2 instance can be encrypted.
 >
 > EBS Volume Types:
 >
@@ -1337,6 +1381,15 @@ A service that provides secure, resizable computer capacity in the cloud.
 >   - Cold HDD (sc1)
 >     - Lowest cost volume for less frequently accessed workloads
 >     - Throughput-oriented storage for large volumes of infrequently accessed data
+
+</details>
+
+<details>
+
+<summary>Instance Store</summary>
+
+> Provides a temporary block-level storage for an EC2 instance.  The data in
+> an instance store lives only as long as the associated instance.
 
 </details>
 
