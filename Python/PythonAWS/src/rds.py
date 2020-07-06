@@ -1,7 +1,7 @@
 import argparse
 import boto3
 
-rds = boto3.resource('rds', region_name='us-west-2')
+rds = boto3.client('rds', region_name='us-west-2')
 
 def configure_arguments(resource_parser):
     parser = resource_parser.add_parser('rds', help='Manage RDS instances')
