@@ -24,4 +24,4 @@ class RDS(Client):
         cmd_list = parser.add_parser('list', help='List RDS instances')
 
     def list(self, args):
-        print(self.resource.describe_db_instances())
+        print(self.client.describe_db_instances())
