@@ -1,8 +1,8 @@
 import argparse
 import boto3
-from service_base import ServiceBase
+from service_base import Resource
 
-class EC2(ServiceBase):
+class EC2(Resource):
     def __init__(self, root_parser):
         resource_parser = root_parser.add_parser('ec2', help='Manage EC2 instances')
         command_parser = resource_parser.add_subparsers(description='EC2 Commands', dest='func')
