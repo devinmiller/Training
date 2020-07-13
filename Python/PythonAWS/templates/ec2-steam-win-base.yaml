@@ -16,6 +16,11 @@ Parameters:
   ServiceName:
     Type: String
     Description: The name of the service.
+    Default: SteamCMD Windows
+  VolumeSize:
+    Type: Number
+    Description: The size of the root volume
+    Default: "40"
 Mappings:
   RegionMap:
     us-west-2:
@@ -31,13 +36,22 @@ Resources:
           default:
             - 01_createPath
             - 02_downloadFile
+            - 03_updateSteam
         01_createPath:
           commands:
-            1_makeDir:
-              command: mkdir "C:\\SteamCMD"
+            01-makeDir:
+              command: mkdir "C:\\SteamCMD" -m 0777
         02_downloadFile:
           sources:
-            C:\\SteamCMD: " https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip"
+            C:\\SteamCMD: "https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip"
+        03_updateSteam:
+          commands:
+            01-runUpdate:
+              command: C:\\SteamCMD\\steamcmd.exe +quit
+              ignoreErrors: "true"
+            02-signalDone:
+              command: !Sub >
+                cfn-signal.exe -e %ERRORLEVEL% --resource EC2Instance --stack ${AWS::StackName} --region ${AWS::Region}
     Properties:
       KeyName: !Ref KeyName
       ImageId: 
@@ -49,7 +63,7 @@ Resources:
       BlockDeviceMappings:
         - DeviceName: "/dev/sda1"
           Ebs:
-            VolumeSize: 40
+            VolumeSize: !Ref VolumeSize
       Tags:
         - Key: "Name"
           Value: !Ref ServiceName
@@ -59,13 +73,13 @@ Resources:
         Fn::Base64:
           !Sub |
             <script>
-            cfn-init.exe -v -s ${AWS::StackName} -r EC2Instance --region ${AWS::Region}
+            cfn-init.exe -v -s ${AWS::StackId} -r EC2Instance --configsets default --region ${AWS::Region}
             </script>
     # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-creationpolicy.html
-    # CreationPolicy:
-    #   ResourceSignal:
-    #     Count: 1
-    #     Timeout: "PT15M"
+    CreationPolicy:
+      ResourceSignal:
+        Count: 1
+        Timeout: "PT15M"
   BasicSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
